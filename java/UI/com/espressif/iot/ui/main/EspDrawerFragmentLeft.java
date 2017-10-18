@@ -55,6 +55,7 @@ public class EspDrawerFragmentLeft extends EspDrawerFragmentBase {
         mLoginView.setOnClickListener(mItemClickListener);
         view.findViewById(R.id.drawer_item_help).setOnClickListener(mItemClickListener);
         view.findViewById(R.id.drawer_item_adddevice).setOnClickListener(mItemClickListener);
+        view.findViewById(R.id.drawer_item_pingpang).setOnClickListener(mItemClickListener);
         view.findViewById(R.id.drawer_item_logout).setOnClickListener(mItemClickListener);
         view.findViewById(R.id.drawer_item_settings).setOnClickListener(mItemClickListener);
 

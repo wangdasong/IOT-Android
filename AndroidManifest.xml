@@ -137,6 +137,9 @@
             android:name="com.espressif.iot.ui.configure.DeviceEspTouchActivity"
             android:screenOrientation="portrait" />
         <activity
+            android:name="com.espressif.iot.ui.pingpang.PingpangEspActivity"
+            android:screenOrientation="portrait" />
+        <activity
             android:name="com.espressif.iot.logintool.EspLoginHelpActivity"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity

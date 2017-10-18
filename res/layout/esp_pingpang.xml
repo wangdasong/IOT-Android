@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >
+	
+	 <LinearLayout
+        android:id="@+id/toplinear"
+        android:layout_width="fill_parent"
+        android:layout_height="170dp"
+        android:background="@drawable/normal_shape"
+        android:layout_marginBottom="10dp" >
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dip"
+	        android:text="@string/esp_pingpang_msg" />
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/esp_pingpang_ball" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomlinear"
+        android:layout_width="fill_parent"
+        android:layout_height="170dp"
+        android:background="@drawable/normal_shape" >
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Drag the image and drop it here..." />
+    </LinearLayout>
+
+</GridLayout>

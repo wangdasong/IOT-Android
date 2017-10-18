@@ -27,6 +27,12 @@
             android:text="@string/esp_main_drawer_item_login" />
 
         <TextView
+            android:id="@+id/drawer_item_pingpang"
+            style="@style/MainDrawerItem"
+            android:drawableLeft="@drawable/drawer_left_add"
+            android:text="@string/esp_main_drawer_item_pingpang" />
+
+        <TextView
             android:id="@+id/drawer_item_adddevice"
             style="@style/MainDrawerItem"
             android:drawableLeft="@drawable/drawer_left_add"

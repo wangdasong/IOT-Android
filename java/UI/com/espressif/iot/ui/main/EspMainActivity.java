@@ -1,5 +1,8 @@
 package com.espressif.iot.ui.main;
 
+import org.apache.log4j.Logger;
+
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Fragment;
@@ -9,8 +12,12 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-
-import org.apache.log4j.Logger;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.support.v4.widget.DrawerLayout;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.espressif.iot.R;
 import com.espressif.iot.base.api.EspBaseApiUtil;
@@ -24,19 +31,12 @@ import com.espressif.iot.model.group.EspGroupHandler;
 import com.espressif.iot.ui.configure.DeviceEspTouchActivity;
 import com.espressif.iot.ui.login.LoginActivity;
 import com.espressif.iot.ui.main.EspDrawerFragmentBase.NavigationDrawerCallbacks;
+import com.espressif.iot.ui.pingpang.PingpangEspActivity;
 import com.espressif.iot.ui.settings.SettingsActivity;
 import com.espressif.iot.user.IEspUser;
 import com.espressif.iot.user.builder.BEspUser;
 import com.espressif.iot.util.EspDefaults;
 import com.espressif.iot.util.EspStrings;
-
-import android.app.ActionBar;
-import android.os.AsyncTask;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.Toast;
-import android.support.v4.widget.DrawerLayout;
 
 public class EspMainActivity extends Activity implements NavigationDrawerCallbacks {
     private static final Logger log = Logger.getLogger(EspMainActivity.class);
@@ -49,6 +49,7 @@ public class EspMainActivity extends Activity implements NavigationDrawerCallbac
 
     public static final int REQUEST_LOGIN = 0x10;
     public static final int REQUEST_ESPTOUCH = 0x11;
+    public static final int REQUEST_ESPPINGPANG = 0x12;
 
     private SharedPreferences mSettingsShared;
 
@@ -124,6 +125,9 @@ public class EspMainActivity extends Activity implements NavigationDrawerCallbac
                     break;
                 case R.id.drawer_item_adddevice:
                     startActivityForResult(new Intent(this, DeviceEspTouchActivity.class), REQUEST_ESPTOUCH);
+                    break;
+                case R.id.drawer_item_pingpang:
+                    startActivityForResult(new Intent(this, PingpangEspActivity.class), REQUEST_ESPPINGPANG);
                     break;
                 case R.id.drawer_item_settings:
                     startActivity(new Intent(this, SettingsActivity.class));

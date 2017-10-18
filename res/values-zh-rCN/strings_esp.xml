@@ -6,6 +6,7 @@
     <string name="esp_main_drawer_item_account">未登录</string>
     <string name="esp_main_drawer_item_login">登录/注册</string>
     <string name="esp_main_drawer_item_add_device">添加设备</string>
+    <string name="esp_main_drawer_item_pingpang">乒乓球</string>
     <string name="esp_main_drawer_item_settings">设置</string>
     <string name="esp_main_drawer_item_help">帮助</string>
     <string name="esp_main_drawer_item_logout">退出登录</string>
@@ -267,6 +268,9 @@
     <string name="esp_device_control_all_mesh_plug">控制所有组网Plug</string>
     <string name="esp_device_control_all_mesh_light">控制所有组网Light</string>
     <string name="esp_device_control_all_mesh_remote">控制所有组网Remote</string>
+
+	<string name="esp_pingpang">Esp 乒乓</string>
+	<string name="esp_pingpang_msg">乒乓是个新页面</string>
 
     <string name="esp_esptouch">Esp Touch</string>
     <string name="esp_esptouch_wifi_hint">请先连上Wi-Fi</string>

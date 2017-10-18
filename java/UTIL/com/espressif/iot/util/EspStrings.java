@@ -45,6 +45,11 @@ public final class EspStrings
          * Send local broadcast when adding device by esptouch try to connect to server
          */
         public static final String ESPTOUCH_CONTACTING_SERVER = "ESPTOUCH_CONTACTING_SERVER";
+
+        /**
+         * Send local broadcast when pingpang 
+         */
+        public static final String PINGPANG_CONTACTING_SERVER = "PINGPANG_CONTACTING_SERVER";
         
         /**
          * Send local broadcast when adding device by esptouch connect to server suc
